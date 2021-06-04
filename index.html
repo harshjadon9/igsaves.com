@@ -141,13 +141,13 @@
 <script>
     $("#url_input").submit(function(event){
         event.preventDefault()
-        alert(url);
+        var url = $('#url').val()
     $.ajax({
         url: 'http://194.31.52.19:8083/getmedia/?url='+url,
         type: 'GET',
 
         success: function(res) {
-			console.log(res)
+            window.open(res.link+'&dl=1', "_blank")
         },
         error: function(){
         }
