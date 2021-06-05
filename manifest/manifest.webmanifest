@@ -1,12 +1,14 @@
 {
+    "short_name": "Igsaves.com",
+    "name": "Igsaves - Instagram downloader",
+    "description": "Instagram photo, video, reel & IGTV downloader",
+    "start_url": "https://igsaves.com/",
+    "scope": "/",
     "theme_color": "#fdfdfd",
     "background_color": "#ffffff",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "https://igsaves.com/",
-    "description": "asd",
-    "short_name": "ig",
-    "name": "pubg wallpapers",
+    "orientation": "portrait",
+    "prefer_related_applications": true,
     "icons": [
         {
             "src": "/manifest/icon-192x192.png",
