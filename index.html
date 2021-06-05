@@ -143,9 +143,8 @@
         event.preventDefault()
         var url = $('#url').val()
     $.ajax({
-        url: 'http://194.31.52.19:8083/getmedia/?url='+url,
+        url: 'https://api.igsaves.com/v1/getmedia/?url='+url,
         type: 'GET',
-
         success: function(res) {
             window.open(res.link+'&dl=1', "_blank")
         },
