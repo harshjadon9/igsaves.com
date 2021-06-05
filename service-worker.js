@@ -1,6 +1,13 @@
 const cacheName = 'igsaves-cache-v1';
 const resourcesToPrecache = [
     '/',
+    '/index.css',
+    '/jquery.js',
+    '/manifest/manifest.webmanifest',
+    'icon-192x192.png',
+    'icon-256x256.png',
+    'icon-384x384.png',
+    'icon-512x512.png',
     '/img/min/logo.png',
     '/img/min/igtv.webp',
     '/img/min/reel.webp',
