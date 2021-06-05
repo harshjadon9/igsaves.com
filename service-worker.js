@@ -3,10 +3,18 @@ const resourcesToPrecache = [
     '/',
     '/img/min/logo.png',
     '/img/min/igtv.webp',
+    '/img/min/reel.webp',
+    '/img/min/photos.webp',
+    '/img/min/video.webp',
+    '/img/min/carousels.webp',
+    '/img/min/step1.webp',
+    '/img/min/step2.webp',
+    '/img/min/step3.webp',
+    '/img/min/pnv.webp',
 ];
 
 self.addEventListener('install', event => {
-    console.log('✔ SW Installed! ');
+    console.log('SW-js Installed! 😃');
     event.waitUntil(
         caches.open(cacheName)
             .then(cache => {
@@ -24,7 +32,7 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-    console.log('🚀 Activate SW!');
+    console.log(' SW-js Activated 😎');
 });
 
 self.addEventListener('fetch', event => {
