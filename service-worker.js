@@ -2,6 +2,7 @@ const cacheName = 'igsaves-cache-v1';
 const resourcesToPrecache = [
     '/',
     '/img/min/logo.png',
+    '/img/min/igtv.webp',
 ];
 
 self.addEventListener('install', event => {
