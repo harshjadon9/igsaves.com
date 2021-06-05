@@ -1,4 +1,4 @@
-const cacheName = 'igsaves-cache-v1';
+const cacheName = 'igsaves-cache-v2';
 const resourcesToPrecache = [
     '/',
     '/index.css',
