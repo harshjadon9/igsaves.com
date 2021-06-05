@@ -26,7 +26,7 @@
         <form id="url_input">
             <div class="searchbar shadow" style="box-shadow: 0px 5px 20px 0px #4a4a4a47;">
                     <input type="text" id="url" class="search" placeholder="https://www.instagram.com/p/Y7GF-5vftL/" required>
-                    <div class="downbtn"><button class="btnshadow" type="submit">Download</button></div>
+                    <div class="downbtn"><button class="btnshadow" type="submit"><div id="dbtn">Download</div><div class="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div></button></div>
             </div>
             <h3>Download Photos, Videos, Reels, IGTVs & Carousels</h3>
         </form>
@@ -140,13 +140,23 @@
 </div>
 <script>
     $("#url_input").submit(function(event){
+        $('#dbtn').css("display", "none");
+        $('#loader').css("display", "block");
         event.preventDefault()
         var url = $('#url').val()
     $.ajax({
         url: 'https://api.igsaves.com/v1/getmedia/?url='+url,
         type: 'GET',
         success: function(res) {
-            window.open(res.link+'&dl=1', "_blank")
+            var arrayLength = res.links.length;
+            for (var i = 0; i < arrayLength; i++) {
+                window.open(res.links[i]+'&dl=1')
+                console.log(res.links[i]);
+            }
+            $('#dbtn').css("display", "block");
+            $('#loader').css("display", "none");
+            
+            // window.open(res.link+'&dl=1', "_blank")
         },
         error: function(){
         }
