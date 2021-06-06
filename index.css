@@ -10,6 +10,10 @@
     color: white;
     background: #505050;
   }
+  input:-webkit-autofill
+    {   
+        -webkit-text-fill-color: var(--base)!important;
+    }
   @keyframes slideupsmallandfade {
     0% {
       opacity: 0;

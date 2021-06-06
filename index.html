@@ -269,14 +269,12 @@
         var $regexname = /^((https|http)?:\/\/(?:www\.)?instagram\.com\/(p|tv|reel)\/([^/?#&]+)).*/;
         $('#url').on('keyup', function () {
             if (!$(this).val().match($regexname) && $(this).val() != '') {
-                console.log("wrong");
                 $('#valid').css('display','none');
                 $('#error').css('display','inline-flex');
                 $('#submit').attr('disabled', 'disabled');
             } else if ($(this).val() != ''){
                 $('#error').css('display','none');
                 $('#valid').css('display','inline-flex');
-                console.log("right");
                 $("#submit").removeAttr('disabled');
                 setTimeout(function(){ $('#valid').css('animation-name','slidedownsmallandfade'); }, 1000);
                 setTimeout(function(){ $('#valid').css('display','none'); }, 1100);
