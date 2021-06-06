@@ -61,6 +61,28 @@
                     <input type="text" id="url" class="search" placeholder="https://www.instagram.com/p/Y7GF-5vftL/" required>
                     <div class="downbtn"><button class="btnshadow" type="submit"><div id="dbtn">Download</div><div class="lds-ellipsis" id="loader"><div></div><div></div><div></div><div></div></div></button></div>
             </div>
+            <div class="error-box">
+                <div class="error" id="error">
+                <div class="error-l">
+                    <img src="/img/min/warning.png" alt="warning icon" srcset="">
+                </div>
+                <div class="error-text">
+                    <h5>Error!</h5>
+                    <p>Invalid URL</p>
+                    <p>Please provide url only for Photos, Videos, IGTV, Albums or Reel</p>
+                </div>
+                </div>
+            </div>
+            <div class="error-box">
+                <div class="error" id="valid" style=" height: 65px; width: 195px; background: #0cce6c;">
+                <div class="error-l" style="background: #03984e; width: 70px;">
+                    <img src="/img/min/checked.png" alt="valid icon" srcset="" style="height: 30px;">
+                </div>
+                <div class="error-text" style="display: grid;">
+                    <h5 style="margin: auto;">Valid URL</h5>
+                </div>
+                </div>
+            </div>
             <h3>Download Photos, Videos, Reels, IGTVs & Carousels</h3>
         </form>
     </div>
@@ -239,7 +261,35 @@
     deferredPrompt = null;
     });
 
-  </script>
 </script>
+
+</script>
+<script type="text/javascript" language="JavaScript">
+    $(document).ready(function () {
+        var $regexname = /^((https|http)?:\/\/(?:www\.)?instagram\.com\/(p|tv|reel)\/([^/?#&]+)).*/;
+        $('#url').on('keyup', function () {
+            if (!$(this).val().match($regexname) && $(this).val() != '') {
+                console.log("wrong");
+                $('#valid').css('display','none');
+                $('#error').css('display','inline-flex');
+                $('#submit').attr('disabled', 'disabled');
+            } else if ($(this).val() != ''){
+                $('#error').css('display','none');
+                $('#valid').css('display','inline-flex');
+                console.log("right");
+                $("#submit").removeAttr('disabled');
+                setTimeout(function(){ $('#valid').css('animation-name','slidedownsmallandfade'); }, 1000);
+                setTimeout(function(){ $('#valid').css('display','none'); }, 1100);
+                setTimeout(function(){ $('#valid').css('animation-name','slideupsmallandfade'); }, 2000);
+                // $('#valid').css('animation-name','slideupsmallandfade');
+            }
+            else{
+                $('#error').css('display','none');
+                $('#valid').css('display','none');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

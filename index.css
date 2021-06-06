@@ -10,6 +10,27 @@
     color: white;
     background: #505050;
   }
+  @keyframes slideupsmallandfade {
+    0% {
+      opacity: 0;
+      transform: translate(0px,20px);
+    }
+    100% {
+      
+      opacity: 1;
+      transform: translate(0px,0px);
+    }
+  }
+  @keyframes slidedownsmallandfade {
+    0% {
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0px,20px);
+    }
+  }
 body{
     background-color: rgb(248, 250, 252);
     margin: 0px;
@@ -122,6 +143,56 @@ nav{
 .downbtn button:hover{
     background: #256fe7;
 }
+
+/* error popup */
+.error-box{
+    width: -webkit-fill-available;
+    margin: auto;
+    display: flex;
+    position: absolute;
+}
+.error{
+    display: none;
+    background: #ff1d1d;
+    height: 100px;
+    width: 512px;
+    margin: auto;
+    margin-top: 39px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 0px #00000033;
+    animation-name: slideupsmallandfade;
+    animation-fill-mode: backwards;
+    transition: all 0.2s ease-out;
+    animation-duration: 0.2s;
+}
+.error-l{
+    display: grid;
+    height: inherit;
+    width: 110px;
+    background: #c50100;
+    border-radius: 10px 0px 0px 10px;
+}
+.error-l img{
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+.error-text{
+    color: white;
+    font-size: smaller;
+    padding: 7px 22px;
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+.error-text h5{
+    margin: 0px;
+    font-size: initial;
+}
+.error-text p{
+    margin: 7px 0px;
+}
+
+
 .inputarea h3{
     margin-top: 50px;
     color: white;

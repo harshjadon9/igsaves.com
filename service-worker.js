@@ -3,6 +3,8 @@ const resourcesToPrecache = [
     '/',
     '/index.css',
     '/jquery.js',
+    '/img/min/warning.png',
+    '/img/min/checked.png',
     '/manifest/manifest.webmanifest',
     '/manifest/icon-192x192.png',
     '/manifest/icon-256x256.png',
