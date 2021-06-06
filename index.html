@@ -348,7 +348,7 @@
         </div>
         <hr>
         <div class="year">
-            © 2021 Igsaves. All rights reserved.
+            © 2021 Igsaves.com All rights reserved.
         </div>
     </footer>
     <script>
@@ -372,6 +372,12 @@
                     // window.open(res.link+'&dl=1', "_blank")
                 },
                 error: function () {
+                },
+                statusCode: {
+                    500: function () {
+                        alert("This is a private profile and Instagram does not allow private profile downloads");
+                        location.reload();
+                    }
                 }
 
             });
