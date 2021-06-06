@@ -50,6 +50,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("url_input").submit();
+        }
+    </script>
+
     <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
@@ -131,8 +139,8 @@
 
     <header class="shadow">
         <nav>
-            <a href="https://igsaves.com/"><img src="img/min/logo.png" alt="igasaves.com logo" title="Igsaves - Instagram downloader"
-                    height="45"></a>
+            <a href="https://igsaves.com/"><img src="img/min/logo.png" alt="igasaves.com logo"
+                    title="Igsaves - Instagram downloader" height="45"></a>
             <div class="nav_right">
                 <button><a href="https://kiveemusic.com/">Youtube to MP3</a></button>
                 <button><a href="https://oceanofwallpapers.com/"> 4k wallpaper downloader</a></button>
@@ -145,9 +153,9 @@
             <h1>Instagram Downloader</h1>
             <form id="url_input">
                 <div class="searchbar shadow" style="box-shadow: 0px 5px 20px 0px #4a4a4a47;">
-                    <input type="text" id="url" class="search" autofocus placeholder="https://www.instagram.com/p/Y7GF-5vftL/"
-                        required>
-                    <div class="downbtn"><button class="btnshadow" type="submit">
+                    <input type="text" id="url" class="search" autofocus
+                        placeholder="https://www.instagram.com/p/Y7GF-5vftL/" required>
+                    <div class="downbtn"><button class="btnshadow g-recaptcha" data-sitekey="6LffMRgbAAAAAITWfp5yN6wJ3yGnjsxCC8vnJr7k" data-callback='onSubmit' data-action='submit' type="submit">
                             <div id="dbtn">Download</div>
                             <div class="lds-ellipsis" id="loader">
                                 <div></div>
@@ -321,7 +329,8 @@
     </div>
     <footer class="shadow">
         <div class="flogo">
-            <a href="https://igsaves.com/"><img src="img/min/logo.png" alt="instagram downloader" srcset="" title="Igsaves - Instagram Downloader"></a>
+            <a href="https://igsaves.com/"><img src="img/min/logo.png" alt="instagram downloader" srcset=""
+                    title="Igsaves - Instagram Downloader"></a>
         </div>
         <div class="flinks" style="display: none;">
             <div class="flmain">
