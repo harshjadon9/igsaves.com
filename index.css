@@ -358,6 +358,11 @@ nav{
 
 
 
+
+
+
+
+
 .w-full {
     width: 100%;
 }
@@ -439,3 +444,148 @@ nav{
     transform: translate(19px, 0);
   }
 }
+
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    ::placeholder{
+        color: #9d9d9d;
+        font-size: 14px;
+       }
+    /* nav */
+    header{
+        width: 100%;
+    }
+    .nav_right{
+        display: none;
+    }
+    nav{
+        padding: 11px 14px;
+    }
+    nav img{
+        height: 40px;
+    }
+
+    /* inputarea */
+    .inputarea{
+        width: 100%;
+        padding-bottom: 45px;
+    }
+    .inputarea h1{
+        font-size: 1.6em;
+    }
+    .inputarea h3{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .searchbar{
+        background: none;
+        display: grid;
+        box-shadow: none!important;
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .search{
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+        font-size: inherit;
+    }
+    input{
+        height: 18px;
+    }
+    .downbtn{
+        margin-top: 20px;
+    }
+    .downbtn button{
+        margin: auto;
+    }
+
+    .error{
+        width: 90%;
+        height: 70px;
+    }
+    .error-l{
+        width: 20%;
+    }
+    .error-l img {
+        height: 28px;
+    }
+    .error p{
+        display: none;
+    }
+    .error-text{
+        margin: auto;
+        content: "asd";
+    }
+
+
+
+    .main{
+        padding: 20px 19px;
+
+    }
+    .howto h2{
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 33px;
+    }
+    .features h3{
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 29px;
+    }
+    .howto h4{
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+    .howtocards{
+        display: grid;
+    }
+    .howtocardsstep{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .card{
+        display: grid;
+        height: fit-content;
+        min-height: fit-content;
+        max-height: fit-content;
+        width: fit-content;
+    }
+    .backimage {
+        width: 100%;
+    }
+    .backimage img{
+        height: 340px;
+        width: inherit!important;
+        border-radius: 8px 8px 0px 0px!important;
+    }
+    .carousel img{
+        object-position: right;
+    }
+    .des {
+        width: 100%;
+    }
+    .des h2{
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin-bottom: 0px;
+    }
+    .des p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .blah {
+        padding: 20px 15px;
+    }
+
+  }
