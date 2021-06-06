@@ -353,6 +353,33 @@ nav{
     margin-bottom: 83px;
 }
 
+footer{
+    margin-top: 150px;
+    padding: 20px 0px;
+    width: 100%;
+    /* margin: auto; */
+    background: white;
+}
+.flogo{
+    margin-bottom: 20px;
+}
+.flogo img{
+    margin: auto;
+    display: block;
+    height: 40px;
+}
+footer hr{
+    width: 80%;
+}
+.year{
+    font-size: smaller;
+    font-family: 'Roboto';
+    text-align: center;
+    color: #a2a2a2;
+    padding-top: 9px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
 
 
 
@@ -566,6 +593,7 @@ nav{
     .backimage img{
         height: 340px;
         width: inherit!important;
+        transform: scale(1)!important;
         border-radius: 8px 8px 0px 0px!important;
     }
     .carousel img{
