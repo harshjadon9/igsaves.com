@@ -368,6 +368,7 @@ footer{
     margin: auto;
     display: block;
     height: 40px;
+    margin-bottom: 40px;
 }
 .flneed{
     margin: auto;
@@ -378,6 +379,7 @@ footer{
     color: #777777;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 15px;
 }
 .flneed a{
     text-align: center;
