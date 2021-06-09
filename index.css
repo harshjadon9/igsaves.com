@@ -507,7 +507,7 @@ footer hr{
     border-radius: 22px;
     padding: 10px 50px;
     backdrop-filter: blur(10px);
-    background: #ffffff78;
+    background: white;
     /* backdrop-filter: blur(62px); */
     margin: auto;
 }
