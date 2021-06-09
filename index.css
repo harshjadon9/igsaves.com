@@ -89,6 +89,7 @@ nav img{
     width: auto;
 }
 nav{
+    background: white;
     display: flex;
     padding: 17px 50px;
 }
@@ -490,7 +491,26 @@ footer hr{
 }
 
 /* for contact page */
-
+.contact-main{
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: flex;
+    margin-top: -70px;
+}
+.contact-card{
+    width: 300px;
+    background: #ff0279;
+    color: #777777;
+    font-family: 'poppins';
+    border-radius: 22px;
+    padding: 10px 50px;
+    backdrop-filter: blur(10px);
+    background: #ffffff78;
+    /* backdrop-filter: blur(62px); */
+    margin: auto;
+}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
