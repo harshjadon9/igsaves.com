@@ -492,12 +492,10 @@ footer hr{
 
 /* for contact page */
 .contact-main{
-    position: absolute;
-    top: 0;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
     display: flex;
-    margin-top: -70px;
+    margin-top: 70px;
 }
 .contact-card{
     width: 300px;
