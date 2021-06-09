@@ -47,6 +47,15 @@ body{
 .btnshadow{
     box-shadow: 2px 2px 16px 0px #00000038;;
 }
+.iheader{
+    width: -webkit-fill-available;
+    display: block;
+    height: 80px;
+}
+.ifooter{
+    width: -webkit-fill-available;
+    display: block;
+}
 .select, input, textarea {
     font-size: 21px;
     height: 33px;
@@ -496,7 +505,9 @@ footer hr{
     nav img{
         height: 40px;
     }
-
+    .iheader{
+        height: 62px;
+    }
     /* inputarea */
     .inputarea{
         width: 100%;

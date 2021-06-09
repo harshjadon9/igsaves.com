@@ -123,12 +123,6 @@
             }
         </script>
 
-
-    <script>
-        $(function () {
-            $("#header").load("./header.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -138,11 +132,10 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-QQZVCLLJ74');
     </script>
 
-    <div id="header"></div>
+    <div class="iheader" id="header"></div>
     <section class="w-full mx-auto bg-gradient-to-tr from-blue-600 via-pink-600 to-red-600">
         <div class="inputarea">
             <h1>Instagram Downloader</h1>
@@ -322,31 +315,11 @@
             </div>
         </div>
     </div>
-    <footer class="shadow">
-        <div class="flogo">
-            <a href="https://igsaves.com/"><img src="img/min/logo.png" alt="instagram downloader" srcset=""
-                    title="Igsaves - Instagram Downloader"></a>
-        </div>
-        <div class="flinks" style="display: none;">
-            <div class="flmain">
-                <a href="#">Instagram Photo downloader</a>
-                <a href="#">Instagram video downloader</a>
-                <a href="#">Instagram reel downloader</a>
-                <a href="#">Instagram IGTV downloader</a>
-            </div>
-            <div class="flneed">
-                <a href="#">privacy-policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">contact us</a>
-                <a href="#">About us</a>
-            </div>
-        </div>
-        <hr>
-        <div class="year">
-            © 2021 Igsaves.com All rights reserved.
-        </div>
-    </footer>
+
     <script>
+        $(document).ready(function () {
+            $("#header").load("./header.html");
+        });
         $("#url_input").submit(function (event) {
             $('#dbtn').css("display", "none");
             $('#loader').css("display", "block");
