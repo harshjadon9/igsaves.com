@@ -369,6 +369,19 @@ footer{
     display: block;
     height: 40px;
 }
+.flneed{
+    margin: auto;
+    width: 65%;
+    display: block;
+    height: auto;
+    font-family: sans-serif;
+    color: #777777;
+    display: flex;
+    justify-content: space-evenly;
+}
+.flneed a{
+    text-align: center;
+}
 footer hr{
     width: 80%;
 }
@@ -684,4 +697,10 @@ footer hr{
         padding: 20px 15px;
     }
 
+    .flneed{
+        display: grid;
+    }
+    .flneed a{
+        margin-bottom: 10px;
+    }
   }
