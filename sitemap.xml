@@ -8,7 +8,28 @@
 
 <url>
   <loc>https://igsaves.com/</loc>
-  <lastmod>2021-06-05T18:27:15+00:00</lastmod>
+  <lastmod>2021-06-09T22:02:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://igsaves.com/privacy-policy/</loc>
+  <lastmod>2021-06-09T22:02:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igsaves.com/terms-and-conditions/</loc>
+  <lastmod>2021-06-09T22:02:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igsaves.com/contact/</loc>
+  <lastmod>2021-06-09T22:02:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://igsaves.com/about/</loc>
+  <lastmod>2021-06-09T22:02:10+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
