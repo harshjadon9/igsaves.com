@@ -474,6 +474,22 @@ footer hr{
 
 
 
+/* for privacy policy page */
+
+.privacy{
+    margin-top: 50px;
+}
+.privacy h2{
+    font-weight: 600;
+    font-family: 'Roboto';
+    margin-top: 50px;
+}
+.privacy p{
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+/* for contact page */
 
 
 /* mobile */
