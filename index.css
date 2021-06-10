@@ -121,6 +121,7 @@ nav{
     padding: 10px;
     width: fit-content;
     border-radius: 8px;
+    box-shadow: 0px 5px 20px 0px #4a4a4a47;
 }
 .center{
     margin: auto;
@@ -197,6 +198,21 @@ nav{
     margin: 7px 0px;
 }
 
+#valid{
+    height: 65px; width: 195px; background: #0cce6c;
+}
+#valid .error-l{
+    background: #03984e; width: 70px;
+}
+#valid .error-l img{
+    height: 30px;
+}
+#valid .error-text{
+    display: grid;
+}
+#valid .error-text h5{
+    margin: auto;
+}
 
 .inputarea h3{
     margin-top: 50px;
@@ -222,6 +238,38 @@ nav{
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.card:first-child .backimage img{
+    margin: auto; display: block; transform: scale(1.3);width: auto; float: inherit;
+}
+.card:first-child .des .blah h2 p:first-child{
+    all: unset;
+    color: #457cff;
+}
+.card:first-child .des .blah h2 p:nth-child(2){
+    all: unset;
+    color: #f92f62;
+}
+.photos h2 p{
+    all: unset;
+    color: #457cff;
+}
+.videos h2 p{
+    all: unset;
+    color: #ff36ee;
+}
+.reels h2 p{
+    all: unset;
+    color: #f92f62;
+}
+.igtv h2 p{
+    all: unset;
+    color: #ff24a6;
+}
+.carousel h2 p{
+    all: unset;
+    color: #f92f62;
+}
+
 .tleft{
     flex-direction: row-reverse;
 }
@@ -280,6 +328,10 @@ nav{
     letter-spacing: 1px;
     margin-top: 73px;
     margin-bottom: 33px;
+}
+.howto h2 p:first-child{
+    all: unset;
+    color: #924cff;
 }
 .howto h4{
     display: block;
@@ -340,12 +392,16 @@ nav{
 .features{
     width: 100%;
 }
+.features h3 p{
+    all: unset;
+    color: #f92f62;
+}
 .features h3{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    font-size: xxx-large;
+    font-size: 2em;
     font-family: 'Poppins';
     color: var(--base);
     font-weight: 800;
@@ -525,6 +581,11 @@ footer hr{
     /* backdrop-filter: blur(62px); */
     margin: auto;
 }
+.contact-card strong{
+    margin-top: 10px;
+    display: block;
+    text-decoration: underline;
+}
 
 /* for t&c */
 
@@ -579,7 +640,6 @@ footer hr{
     .searchbar{
         background: none;
         display: grid;
-        box-shadow: none!important;
         margin: auto;
         width: 100%;
         padding: 0;
