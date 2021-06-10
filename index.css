@@ -383,6 +383,7 @@ footer{
 }
 .flneed a{
     text-align: center;
+    padding: 10px;
 }
 footer hr{
     width: 80%;
