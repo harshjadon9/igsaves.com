@@ -2,7 +2,7 @@
 
  <img width="100px" src="https://user-images.githubusercontent.com/62889318/183240038-3136f10b-388e-47e2-bc27-8d728722aeed.png" align="center" alt="oceanofwallpapers.com" />
  <h2 align="center">Instagram Downloader</h2>
- <p align="center">Download Puplic Instagram Posts!</p>
+ <p align="center">Download Public Instagram Posts!</p>
 </p>
   <p align="center">
   <img src="https://img.shields.io/badge/Frontend-blueviolet?color=violetblue"/>
